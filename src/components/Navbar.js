@@ -28,6 +28,8 @@ const Navbar = () => (
             </Link>
           </div>
           <div className="navbar-start">
+            <Link className="navbar-item" to="/">Home</Link>
+            <Link className="navbar-item" to="/blog">Blog</Link>
             {data.allWordpressPage.edges.map(edge => (
               <Link
                 className="navbar-item"

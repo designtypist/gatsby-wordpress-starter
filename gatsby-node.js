@@ -99,7 +99,7 @@ exports.createPages = ({ actions, graphql }) => {
         createPage,
         items: posts,
         itemsPerPage: 10,
-        pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? `/` : `/page`),
+        pathPrefix: ({ pageNumber }) => (pageNumber === 0 ? `/blog` : `/blog/page`),
         component: blogTemplate,
       })
     })
